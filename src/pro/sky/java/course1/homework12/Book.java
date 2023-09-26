@@ -1,30 +1,30 @@
 package pro.sky.java.course1.homework12;
 
 public class Book {
-    private String title_;
-    private Author author_;
-    private int releaseYear_;
+    private String title;
+    private Author author;
+    private int releaseYear;
 
     public Book(String title, Author author, int releaseYear) {
-        title_ = title;
-        author_ = author;
-        releaseYear_ = releaseYear;
+        this.title = title;
+        this.author = author;
+        this.releaseYear = releaseYear;
     }
 
-    public String GetTitle(){
-        return title_;
+    public String getTitle(){
+        return this.title;
     }
 
-    public Author GetAuthor(){
-        return author_;
+    public Author getAuthor(){
+        return this.author;
     }
 
-    public int GetReleaseYear(){
-        return releaseYear_;
+    public int getReleaseYear(){
+        return this.releaseYear;
     }
 
-    public void SetReleaseYear(int releaseYear){
-        releaseYear_ = releaseYear;
+    public void setReleaseYear(int releaseYear){
+        this.releaseYear = releaseYear;
     }
 
 }

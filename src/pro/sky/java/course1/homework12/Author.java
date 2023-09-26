@@ -1,20 +1,20 @@
 package pro.sky.java.course1.homework12;
 
 public class Author {
-    private String name_;
-    private String lastName_;
+    private String name;
+    private String lastName;
 
-    public Author(String name, String laseName) {
-        name_ = name;
-        lastName_ = laseName;
+    public Author(String name, String lastName) {
+        this.name = name;
+        this.lastName = lastName;
     }
 
-    public String GetName(){
-        return name_;
+    public String getName(){
+        return this.name;
     }
 
-    public String GetLastName(){
-        return lastName_;
+    public String getLastName(){
+        return this.lastName;
     }
 
 
