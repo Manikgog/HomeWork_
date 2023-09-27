@@ -1,6 +1,6 @@
 package pro.sky.java.course1.homework12;
 
-public class HomeWork12 {
+public class App {
     public static void main(String[] args) {
 
         Author a1 = new Author("Bjarne", "Stroustrup");
@@ -31,5 +31,36 @@ public class HomeWork12 {
         System.out.println("Автор: "+ b1.getAuthor().getName() + " " + b1.getAuthor().getLastName());
         System.out.println("Год публикации: " + b1.getReleaseYear());
         System.out.println("----------------------------------------------------");
+
+        System.out.println("Проверка метода toString:");
+        System.out.println(b1.toString());
+        System.out.println(b2.toString());
+        System.out.println(b3.toString());
+        System.out.println("----------------------------------------------------");
+        System.out.println("Проверка метода equals:");
+        Book b4 = new Book("A Tour of C++", new Author("Bjarne", "Stroustrup"), 2020);
+        System.out.println("Объекты класса Book:");
+        System.out.println(b1.toString());
+        System.out.println(b4.toString());
+        if(b1.equals(b4)){
+            System.out.println("равны");
+        }else {
+            System.out.println("НЕ равны");
+        }
+
+        b4.setReleaseYear(2021);
+
+        System.out.println("Объекты класса Book:");
+        System.out.println(b1.toString());
+        System.out.println(b4.toString());
+        if(b1.equals(b4)){
+            System.out.println("равны");
+        }else {
+            System.out.println("НЕ равны");
+        }
+        System.out.println("----------------------------------------------------");
+
+
+
     }
 }
